@@ -18,7 +18,7 @@ const getComputerChoice = () => {
 
 const getHumanChoice = () => {
     const choice = prompt("Rock. Paper. Scissor?");
-    return `You: ${choice}`;
+    return choice;
 
 }
 
@@ -75,4 +75,12 @@ const playRound = (humanChoice, computerChoice) => {
 
 
 }
+
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+
+
+console.log(playRound(humanSelection, computerSelection));
 
