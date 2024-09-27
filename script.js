@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 const getComputerChoice = () => {
     const computerChoice =  Math.round(Math.random() * 2);
     if(computerChoice === 0){
