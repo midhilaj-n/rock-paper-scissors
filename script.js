@@ -1,7 +1,7 @@
 let humanScore = 0;
 let computerScore = 0;
 
-const getComputerChoice = () => {
+function getComputerChoice() {
     const computerChoice =  Math.round(Math.random() * 2);
     let result;
     if(computerChoice === 0){
@@ -16,7 +16,7 @@ const getComputerChoice = () => {
     return result.toLowerCase();
 }
 
-const getHumanChoice = () => {
+function getHumanChoice(){
     const choice = prompt("Rock. Paper. Scissor?");
     return choice;
 
@@ -26,7 +26,7 @@ const getHumanChoice = () => {
 
 
 
-const playRound = (humanChoice, computerChoice) => {
+function playRound(humanChoice, computerChoice) {
     const lowerCase = humanChoice.toLowerCase();
     let result;
     if(humanChoice === computerChoice){
